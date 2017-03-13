@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>倒计时</title>
+	<style>
+		#content{
+			width:500px;
+			margin-top:50px;
+			position:absolute;
+		}
+		input{
+			border:2px dashed orange;
+			width:50px;
+			line-height:50px;
+			background-color:#EAF899;
+			border-radius:50% 50%;
+			text-align:center;
+			font-size:30px;
+			color:#EB4841;
+		}
+		input[type="button"]{
+			width:70px;
+			line-height:30px;
+			background-color:#F6AF00;
+			border-radius:10% 10%;
+			text-align:center;
+			font-size:18px;
+			color:white;
+			margin-left:20px;
+		}
+		#box{
+			margin-left:50px;
+		}
+		#pic{
+			width:500px;
+			height:375px;
+			background:url(http://ww3.sinaimg.cn/mw690/6cccc1b7gw1f9wow2vc5wj20dw0afwga.jpg);
+			border-radius:10% 10%;
+			text-align:left;
+		}
+		span{
+			display:inline-block;
+			margin:20px 80px;
+			color:#6C8F6F;
+			font:bold 50px "Algerian",sans-serif;
+		}
+	</style>
+</head>
+<body>
+	<div id="content">
+		<div id="box">
+			<input type="text">
+			<input type="text">
+			<input type="text">
+			<input type="button" value="CLICK">
+		</div>
+		<div id="pic"><span>00:00:00</span></div>
+	</div>
+
+	<script>
+		var inps=document.getElementsByTagName("input");
+		var content=document.getElementById("content");
+		var oSp=content.getElementsByTagName("span")[0];
+		//↓利用可视区宽度和自身宽度让content居中
+		var winW=document.documentElement.clientWidth;
+		content.style.left=(winW-content.clientWidth)/2+"px";
+
+		timer=null;
+		function add0(n){
+			return n<10?n="0"+n:n=""+n;
+		}		
+
+		inps[3].onclick=function(){
+			difTime();
+			timer=setInterval(difTime,1000);				
+		}
+
+		function difTime(){
+			//time in the moment
+			var now=new Date();
+			
+			//time in future
+			var t=new Date();
+			var h=inps[0].value;
+			var m=inps[1].value;
+			var s=inps[2].value;
+			t.setHours(h);
+			t.setMinutes(m);
+			t.setSeconds(s);			
+
+			var differTime=(t-now)/1000;//transfer to seconds	
+			if(differTime<0){//这里不能写<=0，否则=0的时候就把定时器清除了，读不到给oSp赋值的101行
+				alert("吉时已过~");
+				clearInterval(timer);
+			}else{
+				var hp=Math.floor(differTime%86400/3600);			
+				var mp=Math.floor(differTime%86400%3600/60);			
+				var sp=differTime%60;	
+				var str=add0(hp)+":"+add0(mp)+":"+add0(sp);
+				oSp.innerHTML=str;				
+			}
+		}
+	</script>
+	
+</body>
+</html>
