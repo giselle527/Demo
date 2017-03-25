@@ -1,0 +1,133 @@
+body{margin:0; padding:0; background:RGB(200,247,227);}
+a{
+	text-decoration: none;
+	color:black;
+}
+a:hover{color:green;}
+
+header h1{
+	width:1030px; 
+	height:300px;
+	margin:0 auto;
+	background:url(images/gardern4.png) 0 0 no-repeat RGB(249,241,192);
+	border:15px double RGB(39,150,81);
+	border-radius:20px 20px;
+	position:relative; 
+}
+
+header h1 span{
+	font: 1.6em/1em "STXingkai","Helvetica","Arial",sans-serif;
+	color:RGB(81,31,20);
+	position:absolute;
+	right:18%;
+	top:13%;
+}
+
+.home_cont{
+	width:1020px; 
+	margin:0 auto;
+	padding:30px 20px;
+}
+
+.home_goal{
+	width:300px;
+	height:235px;
+	margin:20px;
+	/*float控制.home_goal的排列*/
+	float:left;
+	/*相对定位是为了子元素绝对定位*/
+	position:relative;
+	top:0;	
+	left:0;
+	background:red;
+}
+
+.home_goal .home_goal_title{
+	display:inline-block;	
+	width:220px;
+	text-align:center;
+	margin:15px 40px 0 40px;
+	/*文字溢出时加省略号*/
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	font:bold 1.4em/1.3em "STKaiti","Helvetica","Times New Roman",sans-serif;;
+	background-color:white;
+	border-radius:15px;
+}
+
+.home_goal .home_tree{	
+	/*小树背景DIV的宽高固定为170px*/
+	width:170px;
+	height:170px;
+	border-radius:50%;
+	background:white;
+	position:relative;
+	left:1%;
+	bottom:-7%;
+}
+
+.home_goal .home_tree .tree{
+	display:inline-block;
+	/*小树的宽高固定为170px*/
+	width:170px;
+	height:170px;
+	border-radius:50%;
+	background-color:white;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-85px;
+	margin-top:-85px;
+
+}
+
+.home_goal em{
+	display:inline-block;
+	font:bold 0.8em/0.8em "Microsoft Yahe";
+	position:absolute;
+	right:2%;
+}
+.home_goal i{
+	font-style:normal;
+	font-family:"Romantic";
+	color:red;
+}
+.home_goal .home_goal_last{
+	bottom:32%;
+}
+.home_goal .home_goal_last i{
+	font-size:2.2em;
+}
+.home_goal .home_goal_punch{
+	bottom:18%;
+}
+.home_goal .home_goal_punch i{
+	font-size:1.9em;
+}
+.home_goal .home_goal_plan{
+	bottom:5%;
+}
+.home_goal .home_goal_plan i{
+	font-size:1.6em;
+}
+
+.home_goal svg{
+	position:absolute;
+	left:0.8em;
+	top:0;
+}
+.home_goal svg text{
+	font:bold 1.3em/1em "Comic Sans MS";
+}
+
+.home_add{
+	background:url(images/plus.png) no-repeat center RGB(253,201,3);
+}
+
+/*通用部分*/
+.clear:after{
+	clear:both;
+	display:block;
+	content:"";
+}
