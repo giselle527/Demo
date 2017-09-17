@@ -1,0 +1,265 @@
+body{
+	margin:0; 
+	padding:0; 
+	background:RGB(40,143,74);
+}
+
+a{
+	text-decoration:none;
+	color:white;
+}
+
+.goal_head{
+    width:700px;
+    height:160px;
+    position:relative;
+    left:50%;
+    margin-top:30px;
+    margin-left:-350px;
+}
+
+.goal_head .go{
+	display:inline-block;
+	height:159px;
+	width:159px;
+	border-radius:50%;
+	/*background-color:RGB(251,40,7);*/
+	/*background-color:RGB(118,36,0);*/
+	background-color:RGB(200,247,227);
+	color:RGB(118,36,0);
+	letter-spacing: 5px;
+	text-align:center;
+	line-height:150px;
+	font:bolder 25px/130px "Microsoft Yahe";
+	box-shadow:0px 0px 10px RGB(118,36,0) inset;
+	position:absolute;
+	top:0;
+}
+
+.goal_head .go_home{	
+	left:6%;
+	
+}
+
+.goal_head .go_edit{
+	right:6%;
+}
+
+.goal_head .go:hover{
+    color:green;
+}
+
+
+.my_goal{
+	position:relative;
+	font-size:2em;
+	width:700px;
+	height:700px;
+	border-radius: 50%;
+	margin:-100px auto 0 auto;
+	background:url(images/logo1.png) no-repeat center 2% RGB(200,247,227);
+	box-shadow:0px 0px 10px RGB(118,36,0) inset;
+}
+
+.my_goal .goal_title{
+	border:none;
+	font: bold 0.9em/1em "STKaiti","Helvetica","Arial",sans-serif;	
+	width:340px;
+	height:1em;
+	padding:10px;
+	color:RGB(81,31,20);
+	border-radius:5px;
+	position:absolute;
+	top:14%;
+	left:50%;
+	margin-left:-180px;
+}
+
+.my_goal input{
+	background:white;
+	text-align:left;
+}
+
+.my_goal h1{
+	text-align:center;
+	margin:0;
+}
+
+.my_goal .goal_detail{
+	font: normal 0.6em/1em "STKaiti","Helvetica","Arial",sans-serif;
+	width:455px;
+	height:85px;
+	padding:10px;
+	border-radius:10px;
+	border:10px double RGB(200,247,227);
+	position:absolute;
+	top:23%;
+	left:50%;
+	margin-left:-247.5px;
+	background:white;  	
+}
+
+.my_goal textarea{
+	resize:none;
+}
+
+.my_goal .go_check{
+	height:159px;
+	width:159px;
+	letter-spacing:5px;
+	font:bolder 27px/25px "Microsoft Yahe";
+	position:absolute;
+	top:41%;
+    left:50%;
+    margin-left:-79.5px;
+}
+
+
+.check{
+	width:676px;
+	height:400px;
+	background:RGB(200,247,227);
+	/*background:green;*/
+	box-shadow:0px 0px 10px RGB(118,36,0) inset;
+	position:absolute;
+	top:530px;
+	left:50%;
+	margin-left:-338px;
+}
+
+.check .line{
+	border:none;
+	height:10px;
+	width:648px;
+	background:RGB(200,247,227);
+	margin-top:-1px;
+}
+
+.check .rowup{
+	width:676px;
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+.check section{
+	width:330px;
+	height:300px;
+	position:absolute;
+	top:1%;	
+	color:RGB(0,74,73);
+}
+
+.check section:nth-child(1){
+	margin-top:30px;
+}
+
+.check .calendar{
+	right:50%;
+}
+
+.check .calendar .time{
+	display:block;
+	position:relative;
+	text-align:center;
+	height:40px;
+	font:bolder 25px/40px "Microsoft Yahe";	
+}
+
+.check .calendar .time em{
+	width:44px;
+	height:40px;
+	display:inline-block;
+	position:absolute;
+	top:0;
+}
+
+.check .calendar .time .arrowl{
+	left:15%;
+	background:url(images/arrowl.png) center no-repeat RGB(200,247,227);
+}
+
+.check .calendar .time .arrowr{
+	right:15%;
+	background:url(images/arrowr.png) center no-repeat RGB(200,247,227);
+}
+
+.check .calendar .time i{
+	font-style:normal;
+}
+
+.check .calendar .cal_cont{
+	width:315px;
+	height:245px;
+	/*font:normal 25px/40px "Microsoft Yahe";*/
+	border:2px solid white;
+	background:white;
+	border-radius:5px;
+	position:absolute;
+	right:7.5px;
+
+}
+
+.check .calendar .cal_cont .cal_sing{
+	width:45px;
+	height:35px;
+	font:normal 20px/35px "Microsoft Yahe";
+	text-align:center;
+	float:left;
+}
+
+.check .calendar .cal_cont .lgreen{
+	background:RGB(200,247,227);
+	border:1px dashed RGB(0,74,73);
+	border-radius:5px;
+	box-sizing:border-box;
+	color:red;
+	font-weight:bold;
+}
+
+.check .record{
+	left:50%;
+}
+
+.check .record em{
+	display:block;
+	font-style:normal;
+	height:30px;
+	padding-left:15px;
+	font:normal 20px/30px "Microsoft Yahe";	
+}
+
+.check .record em i{
+	display:inline-block;
+	font:bold normal 25px/30px "Microsoft Yahe";
+	padding:0px 5px;	
+}
+
+.check .record hr{
+	height:0px;
+border:5px double RGB(0,74,73);
+}
+
+.check .record .moto{
+	margin:0;
+	padding:15px;
+}
+
+.check .record .moto li{
+	list-style:none;
+	padding:0 0 15px 0;
+	font: normal 1.3em/1em "STXingkai","Helvetica","Arial",sans-serif;
+}
+
+
+/*通用*/
+.hidden{
+	display:none;
+}
+
+
+
+
+
+
+

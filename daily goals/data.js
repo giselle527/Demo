@@ -11,7 +11,8 @@ function get_goal_datas(){
     	    'last_days': 10,
     	    'started_at': '2016-12-18',
     	    //选择种哪棵树1-10
-    	    'tree':1
+    	    'tree':1,
+    	    'detail':'you can you up, no can no bb'
 
 	    },
 	    {
@@ -24,7 +25,7 @@ function get_goal_datas(){
 	    },
 	    {
 	    	'id': 3,
-	    	'title': '看书',
+	    	'title': '读万卷书行万里路遇',
 	    	'plan_days':50,
 	    	'punch_days':50,
 	    	'last_days':0,
