@@ -66,18 +66,40 @@
 		var winW=document.documentElement.clientWidth;
 		content.style.left=(winW-content.clientWidth)/2+"px";
 
-		timer=null;	
+		var timer=null;
+		var differT;
+		var str;
 
 		inps[3].onclick=function(){
-			difTime();
-			timer=setInterval(difTime,1000);				
+			differT=difTime();
+			// console.log(differT);
+			if(isNaN(differT)){
+				alert("请输入正确的时间");
+				return;
+			}else if(differT<0){
+				alert("当前时间已过");
+				return;
+			}else if(differT==0){
+				difTime0(differT);
+				return;
+			}else{
+				timer=setInterval(setTimeEvery1Sec,1000);
+				
+			}			
 		}
 
-		function add0(n){
-			return n<10?n="0"+n:n=""+n;
-		}	
+		function setTimeEvery1Sec(){
+			differT=difTime();
+			changeSectoHourMinSec(differT);
+			difTime0(differT);
 
-		function difTime(){
+		}
+
+		function add0(n){//将10以下的数x转换成0x
+			return n<10?n="0"+n:n=""+n;
+		};	
+
+		function difTime(){//获取填入的时间和当下时间的时差（以秒为单位）
 			//time in the moment
 			var now=new Date();
 			
@@ -91,27 +113,32 @@
 			t.setSeconds(s);			
 
 			var differTime=(t-now)/1000;//transfer to seconds	
-			if(differTime<0){//这里不能写<=0，否则=0的时候就把定时器清除了，读不到给oSp赋值的101行
-				alert("吉时已过~");
-				clearInterval(timer);
-			}else if(differTime==0){
-				setTimeout(function(){
-						alert("吉时到~");
-				},16);
-				changeSectoHourMinSec(differTime);
-				clearInterval(timer);
-			}else{
-				changeSectoHourMinSec(differTime);		
-			}
+
+			// debugger;
+
+			return differTime;
 		}
 
+		function difTime0(time){//单独处理当differT为0时的情况
+			// console.log("time: "+time);
+			if(time==0){
+				setTimeout(function(){
+					alert("吉时到~");
+				},16);
+
+				clearInterval(timer);
+				changeSectoHourMinSec(differT);
+			}
+		}
 		function changeSectoHourMinSec(time){//将以秒为单位的时间换算成时分秒
 			var hp=Math.floor(time%86400/3600);			
 			var mp=Math.floor(time%86400%3600/60);			
 			var sp=time%60;	
 			var str=add0(hp)+":"+add0(mp)+":"+add0(sp);
 			oSp.innerHTML=str;
+			console.log("144 line str"+str);
 		}
+
 	</script>
 	
 </body>
