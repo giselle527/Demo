@@ -1,11 +1,13 @@
-﻿# readme
+readme
+=
 
 Tags:文档内容说明 DailyGoals 减重打卡表 倒计时 html&css笔记索引
 
 ---
 
 ## daily goals
-**功能**
+  
+  **功能**
 制定目标并打卡
 **完成度**
 未完成，等掌握好了前端知识再来完善。
