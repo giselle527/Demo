@@ -14,10 +14,10 @@ Tags: 文档内容说明 DailyGoals 减重打卡表 倒计时 html&css笔记索�
 ---
 
 ## loseweight sheet
-**功能**
-减重打卡表
-**完成度**
-100%
+**功能**<br>
+减重打卡表<br>
+**完成度**<br>
+100%<br>
 **用法**
 1. 12.21-loseweight.js中&nbsp;*data数组*&nbsp;存放的是原始数据，可以按格式增添/删减；
 2. *现重*&nbsp;每天都会有变化，要手动填入；
