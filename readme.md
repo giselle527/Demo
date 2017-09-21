@@ -69,6 +69,7 @@ function fn(){
 
 ## html&css note index
 <br>
+**功能**
 **功   能**功能中间有两个tab<br>
 **功       能**功能中间有四个tab
 <br>
