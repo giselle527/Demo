@@ -69,12 +69,15 @@ function fn(){
 
 ## html&css note index
 <br>
-**功   能**`功能中间有两个tab`<br>
-**功       能**`功能中间有四个tab`
+**功   能**功能中间有两个tab<br>
+**功       能**功能中间有四个tab
 <br>
-    自学慕课网HTML+CSS基础课程时记的豆瓣笔记的索引`行首有两个tab`<br>
-    自学慕课网HTML+CSS基础课程时记的豆瓣笔记的索引`行首有两个tab`<br>
-自学慕课网HTML+CSS基础课程时记的豆瓣笔记的索引`行首没有两个tab`<br>
+    自学慕课网HTML+CSS基础课程时记的豆瓣笔记的索引&nbsp;行首有两个tab
+    <br>
+    自学慕课网HTML+CSS基础课程时记的豆瓣笔记的索引&nbsp;行首有两个tab
+    <br>
+自学慕课网HTML+CSS基础课程时记的豆瓣笔记的索引&nbsp;行首没有两个tab
+<br>
 **完成度**
 已完成
 **用法**
