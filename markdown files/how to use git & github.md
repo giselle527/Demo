@@ -188,6 +188,26 @@ github是程序猿的代码托管平台，也是基于git的开源分布式版�
 * 本地已有仓库，远程仓库有更新，从远程仓库同步到本地仓库
     * git pull origin master
 
+### 解决冲突conflict
+
+            av1
+         /      \
+        a         av3
+         \      /
+           av2
+
+
+
+> av1和av2都是a文档的fast-forward，av3是av1和av2的fast-forward，所以在av3处可能会发生conflict。假设是av1处的操作使得发生conflict，那么av1文档的内容会发生变化：  
+1. <<<<<<<到========之间是av1中与av2相冲突的内容；
+2. =======到>>>>>>>>之间是av2中与av1相冲突的内容；
+3. 修改av1文档，删掉符号，保留想保留的文档内容；
+4. 修改好后，add + commit ;
+5. 冲突已解决；
+6. 发生冲突的原因不同，但解决办法大同小异。
+
+
+
 ### 常见问题
 
 **Git提示fatal: remote origin already exists**
