@@ -27,7 +27,7 @@
 
 > core.autocrlf是git中负责处理line-ending的变量，可以设置三个值：true/input/false  
 `$git config --global core.autocrlf true`  
-Git可以在你提交时，自动地把行尾结束符CRLF转换成LF，而在签出代码时把 LF转换成CRLF，适用于windows系统。  
+Git可以在你提交时，自动地把行尾结束符CRLF转换成LF，而在签出代码时把 LF转换成CRLF，适用于windows系统。    
 `$git config --global core.autocrlf input`  
  Git在提交时把CRLF转换成LF，签出时不转换，适用于Linux/Mac。  
  `$git config --global core.autocrlf false`  
