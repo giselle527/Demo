@@ -332,6 +332,8 @@ $ git config --global core.editor "'D:/Program Files/Sublime Text 3/sublime_text
 
 ### --graph
 
+```
+
 * 
 |\
 | * 
@@ -341,17 +343,23 @@ $ git config --global core.editor "'D:/Program Files/Sublime Text 3/sublime_text
 * 
 * 
 
+```
+
 ### --decorate
 
 origin/jnshu, jnshu
 
 ### --stat
 
+```
+
 README.md    |  8 ++++++++
 index.html   | 26 --------------------------
 mytask0.html | 43 -------------------------------------------
 test.html    | 11 -----------
 4 files changed, 8 insertions(+), 80 deletions(-)
+
+```
 
 ## [删除本地仓库和远程仓库](http://blog.csdn.net/pruett/article/details/72600004)
 
