@@ -5,48 +5,6 @@ readme
 
 ---
 
-## md files
-
-### shortcut key
-
-快捷键。
-
-### carriage return & new line
-
-回车和换行的相关知识。
-
-### default browser
-
-在win7系统下通过注册表修改默认浏览器。
-
-### git & github usage
-
-git和github的用法。
-
-### markdown usage
-
-md文档的编写方法。
-
-### install and use sublime markdown
-
-sublime markdown的安装和使用。
-
-
-### chrome plugin
-
-chrome的插件。
-
-#### 翻墙插件tunnello
-
-用chrome浏览器翻墙，翻墙工具在`tools\chrome`。
-
-#### 查看json插件JSONView
-
-#### 离线安装chrome插件
-
-#### chrome使用技巧
-
-
 ## daily goals
 
 制定目标并打卡，未完成，等掌握好了前端知识再来完善。
