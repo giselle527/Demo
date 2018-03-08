@@ -69,6 +69,10 @@
         p_sp.select();
         ev.cancelBubble=true;
     };
+
+    p_sp.onmouseout=function(ev){
+        p_sp.blur();
+    };
     
     var num=data.length+1;
 
